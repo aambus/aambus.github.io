@@ -14,6 +14,20 @@ li {
 .clear {
 	clear: both;
 }
+.dropdown{
+
+			display:inline-block;
+		}
+		.dropdowncon{
+			display: none;
+			background-color: #ffffff;
+
+			position: absolute;
+			width: 220px;
+		}
+		.dropdown:hover .dropdowncon{
+			display: block;
+		}
 header {
 	width: 1000px;
 	height: 100px;
@@ -34,8 +48,14 @@ nav {
 	margin-top: 10px;
 	border: solid 1px #cccccc; 
 }
+ul{
+
+	float: left;
+	margin: 20px 50px;
+}
 nav li {
 	float: left;
+
 	margin: 20px 50px;
 }
 section {
@@ -45,7 +65,7 @@ section {
 }
 aside {
 	float: right;
-	margin-left: 30px;
+	margin-left: 10px;
 	margin-top: 10px;
 	border: solid 1px #cccccc; 
 }
@@ -71,7 +91,6 @@ footer {
 	margin: auto;
     border: solid 1px red;
 }
-
 </style>
 </head>
 <body>
@@ -85,20 +104,67 @@ footer {
 			로그인 | 회원가입 | 마이페이지 | 고객센터 
 		</div>
 	</header>
-<div class='clear'></div> <!-- float 속성 해제 -->
-	<nav>
+
+ <div class='clear'></div><!-- float 속성 해제 -->
+
+<nav>	
+		<div class='dropdown'>
 		<ul>
+			여행주간이란?
+			<div class="dropdowncon">
 			<li>여행주간이란?</li>
-			<li>여행주간프로그램</li>
-			<li>여행정보</li>
-			<li>특별혜택</li>
-			<li>이벤트</li>
-			
+			<li>참여기관 모집</li>
+			</div>
+</div>
 		</ul>
+	
+
+<div class='dropdown'>
+		<ul>
+			여행주간프로그램
+			<div class="dropdowncon">
+			<li>테마여행</li>
+			<li>지역여행</li>
+			</div>
+</div>
+		</ul>
+		
+		<div class='dropdown'>
+		<ul>
+			여행정보
+			<div class="dropdowncon">
+			<li>취향여행 20선</li>
+			<li>지역 축제/행사</li>
+			</div>
+</div>
+		</ul>
+		
+		<div class='dropdown'>
+		<ul>
+			특별혜택
+			<div class="dropdowncon">
+			<li>핵심할인혜택</li>
+			<li>공공할인혜택</li>
+				</div>
+</div>
+		</ul>
+	
+		<div class='dropdown'>
+		<ul>
+		    이벤트
+		    <div class="dropdowncon">
+		    <li>진행중인 이벤트</li>
+			<li>종료된 이벤트</li>
+				</div>
+</div>
+		</ul>
+	
+			
 	</nav>
+
 <div class='clear'></div> <!-- float 속성 해제 -->
 	<section>
-			<img src='img/banner.png' width="810">
+			<img src='img/banner.png' width="750">
 	</section>
 <aside>
 		<ul>
