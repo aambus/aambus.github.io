@@ -1,189 +1,53 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>홈페이지 만들기</title>
-<style>
-* {
-	padding: 0;
-	margin: 0;
-}
-li {
-	list-style-type: none;
-}
-.clear {
-	clear: both;
-}
-.dropdown{
-
-			display:inline-block;
-		}
-		.dropdowncon{
-			display: none;
-			background-color: #ffffff;
+	<title></title>
+	<style type="text/css">
+		#box{
+			z-index: 5;
 			position: absolute;
-		}
-		.dropdown:hover .dropdowncon{
-			display: block;
-		}
-header {
-	width: 1000px;
-	height: 100px;
-	margin-top: 10px;
-	border: solid 1px #cccccc; 
-}
-#logo {
-	margin-top: 20px;
-	float: left;
-}
-#top {
-	float: right;
-	margin: 30px 20px 0 0;
-}
-nav {
-	width: 1000px;
-	height: 70px;
-	margin-top: 10px;
-	border: solid 1px #cccccc; 
-}
-ul{
+			top: 50%;
+			left: 50%;
+			width: 500px;
+			height: 500px;
+			overflow: hidden;
+			margin-top: -246px;
+			margin-left: -251px;
 
-	float: left;
-	margin: 20px 50px;
-}
-nav li {
-	float: center;
-    margin:10px;
-}
-section {
-	float: left;
-	margin-top: 10px;
-	border: solid 1px #cccccc; 
-}
-aside {
-	float: right;
-	margin-left: 10px;
-	margin-top: 10px;
-	border: solid 1px #cccccc; 
-}
-aside li {
-	margin-bottom: 20px;
-}
-footer {
-	width: 1000px;
-	height: 100px;
-	margin-top: 10px;
-	border: solid 1px #cccccc; 
-}
-#address {
-	float: left;
-	margin: 30px 0 0 20px;
-}
-#customer {
-	float: right;
-	margin: 30px 0 0 180px;
-}
-#page {
-	width: 1000px;
-	margin: auto;
-    border: solid 1px red;
-}
-</style>
+			transition: width 5s;
+		}
+		#box:hover{
+
+			width: 0px;
+		}
+
+		#box2{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 500px;
+			height: 500px;
+			overflow: hidden;
+			margin-top: -250px;
+			margin-left: -250px;
+
+		}
+
+		input.img-button{
+       	 background: url( "img/main1.png" ) no-repeat;
+         border: 0px;
+			width: 800px;
+			height: 800px;
+
+       }
+	</style>
 </head>
-<body>
-	<div id='page'>
-
-<header>
-		<div id='logo'>
-			봄 여행 주간 4.27~5.12
-		</div>
-		<div id='top'>
-			로그인 | 회원가입 | 마이페이지 | 고객센터 
-		</div>
-	</header>
-
- <div class='clear'></div><!-- float 속성 해제 -->
-
-<nav>	
-		<div class='dropdown'>
-		<ul>
-			여행주간이란?
-			<div class="dropdowncon">
-			<li>여행주간이란?</li>
-			<li>참여기관 모집</li>
-			</div>
+<body bgcolor="skyblue">
+	<div id="box">
+			<img src='img/main2.png'>
+	</div>
+<div id="box2">
+	<input type="button" onclick="location.href='turtle.html'" class="img-button">
 </div>
-		</ul>
-	
-
-<div class='dropdown'>
-		<ul>
-			여행주간프로그램
-			<div class="dropdowncon">
-			<li>테마여행</li>
-			<li>지역여행</li>
-			</div>
-</div>
-		</ul>
-		
-		<div class='dropdown'>
-		<ul>
-			여행정보
-			<div class="dropdowncon">
-			<li>취향여행 20선</li>
-			<li>지역 축제/행사</li>
-			</div>
-</div>
-		</ul>
-		
-		<div class='dropdown'>
-		<ul>
-			특별혜택
-			<div class="dropdowncon">
-			<li>핵심할인혜택</li>
-			<li>공공할인혜택</li>
-				</div>
-</div>
-		</ul>
-	
-		<div class='dropdown'>
-		<ul>
-		    이벤트
-		    <div class="dropdowncon">
-		    <li>진행중인 이벤트</li>
-			<li>종료된 이벤트</li>
-				</div>
-</div>
-		</ul>
-	
-			
-	</nav>
-
-<div class='clear'></div> <!-- float 속성 해제 -->
-	<section>
-			<img src='img/banner.png' width="750">
-	</section>
-<aside>
-		<ul>
-			<li>마을여행 </li>
-			<li>핵심혜택 </li>
-			<li>이벤트 </li>
-			<li>대한민국 구석구석 </li>
-		</ul>
-	</aside>
-	<section class='clear'>
-			<img src='img/inst.png' width=1000>
-	</section>
-	<div class='clear'></div> <!-- float 속성 해제 -->
-	<footer>
-		<div id='address'>
-			주최 : 문화체육관광부 <br>
-			주관 : 한국관광공사,한국관광협회중앙회, 전국지방자체단체
-		</div>
-		<div id='customer'>
-			관광안내전화 : 국번없이 1330
-		</div>
-	</footer>
-
 </body>
 </html>
