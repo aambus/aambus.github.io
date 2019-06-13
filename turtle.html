@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>거북을 소개합니다</title>
+<style>
+	@font-face{
+
+			font-family: 'HMFMPYUN';
+			src: url(font/HMFMPYUN.TTF) format('truetype');
+		}
+* {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+.clear {
+	clear: both;
+}
+.dropdown{
+			display:inline-block;
+		}
+		.dropdowncon{
+			display: none;
+			background-color: #ffffff;
+			position: absolute;
+		}
+		.dropdown:hover .dropdowncon{
+			display: block;
+		}
+header {
+	width: px;
+	height: 100px;
+	margin-top: 10px;
+}
+#logo {
+	margin-top: px;
+	float: left;
+
+	font-family: HMFMPYUN;
+}
+#idmake{
+	font-family: HMFMPYUN;
+	float: right;
+	width: 210px;
+	height: 25px;
+	margin-top: 10px;
+	border: solid 5px lime; 
+	background-color: white;
+	border-radius: 100px;
+	text-align: center;
+}
+#tag{
+	width: 230px;
+	height:300px;
+	margin: 70px 20px 20px ;
+	text-shadow: 0 0 5px #ffffff;
+	color: black;
+	font-size: 19px;
+	font-family: HMFMPYUN;
+}
+#top {
+	float: right;
+}
+h1{text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+ -moz-text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+ -webkit-text-shadow: -1px 0 #F2F1F6, 0 1px #F2F1F6, 1px 0 #F2F1F6, 0 -1px #F2F1F6;
+	color: green;
+}
+nav {
+	width: 1000px;
+	height: 70px;
+	margin-top: 30px;
+	border: solid 5px lime; 
+	border-radius: 100px;
+	color: black;
+	background-color: white;
+	font-weight: 20px;
+	
+	font-family: HMFMPYUN;
+}
+ul{
+	float: left;
+	font-size: 25px;
+	margin: 20px 50px;
+}
+nav li {
+	float: center;
+    margin:20px;
+}
+section {
+	float: left;
+	margin: 20px;
+	transition: width 1s, height 1s, transform 1s;
+}
+section:active{
+			
+			transform: scale(1.5);/*X, Y를 붙여 방향을 정해줄 수 있다.*/
+		
+		}
+
+aside {
+	float: right;
+	margin-left: 10px;
+	margin-top: 10px;
+	border: solid 1px #cccccc; 
+}
+aside li {
+	margin-bottom: 20px;
+}
+footer {
+	width: 1000px;
+	height: 100px;
+	margin-top: 200px;
+}
+#address {
+	float: left;
+	margin: 30px 0 0 20px;
+}
+#customer {
+	float: right;
+	margin: 30px 0 0 180px;
+}
+#page {
+	width: 1000px;
+	margin: auto;
+
+}
+</style>
+</head>
+<body bgcolor="skyblue">
+	<br>
+	<br>
+	<br>
+	<div id='page'>
+
+<header>
+		<div id='logo'>
+          <h1> &nbsp 바다의 감초, 거북</h1>
+<div id="tag">
+	<h3>거북(문화어: 거부기)</h3><br>거북목에 속하는 파충류의 총칭. <br><br>가장 큰 종류로는 길이 250㎝, <br><br>무게는 800㎏를 넘기기도 해요. <br><br>방패와도 같은 단단한 등껍질과 <br><br> 어딜봐도 귀여운 몸매를 가진 <br><br> 매력넘치는 거북!
+	<br><br> 거북이의 세계로 <br><br> 여러분을 초대합니다!
+</div >
+
+		</div>
+		<div id="idmake">
+			<a href="login.html">로그인 하기</a> | <a href="makingid.html">회원가입 하기</a>
+		</div>
+		<div id='top'>	<section>
+			<img src='img/turtle.png' width="680">
+	</section>
+		</div>
+	</header>
+
+ <div class='clear'></div><!-- float 속성 해제 -->
+
+<nav>	
+		<div class='dropdown'>
+		<ul>
+			<a href="turtle2.html">거북이란?</a>
+			
+</div>
+		</ul>
+	
+
+<div class='dropdown'>
+		<ul>
+            <a href="turtle3.html">거북의 다양한 종류</a>
+</div>
+		</ul>
+		
+		<div class='dropdown'>
+		<ul>
+			<a href="turtle4.html">거북의 세계 분포도</a>
+			
+</div>
+		</ul>
+		
+		<div class='dropdown'>
+		<ul>
+			더 많은 정보
+			<div class="dropdowncon">
+			<li><a href="events.html">진행중인 이벤트</a></li>
+			<li><a href="nomoreevents.html">종료된 이벤트</a></li>
+				</div>
+</div>
+		
+	
+			
+	</nav>
+
+<div class='clear'></div> <!-- float 속성 해제 -->
+	
+	
+	<footer>
+		<div id='address'>
+			<a href="turtle2.html">email : dydwjd00@naver.com</a><br>
+		</div>
+		<div id='customer'>
+			<a href="turtle2.html">@loveinourturtle &nbsp</a>
+		</div>
+	</footer>
+
+</body>
+</html>

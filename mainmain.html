@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#box{
+			z-index: 5;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 500px;
+			height: 500px;
+			overflow: hidden;
+			margin-top: -246px;
+			margin-left: -251px;
+
+			transition: width 5s;
+		}
+		#box:hover{
+
+			width: 0px;
+		}
+
+		#box2{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 500px;
+			height: 500px;
+			overflow: hidden;
+			margin-top: -250px;
+			margin-left: -250px;
+
+		}
+
+		input.img-button{
+       	 background: url( "img/main1.png" ) no-repeat;
+         border: 0px;
+			width: 800px;
+			height: 800px;
+
+       }
+	</style>
+</head>
+<body bgcolor="skyblue">
+	<div id="box">
+			<img src='img/main2.png'>
+	</div>
+<div id="box2">
+	<input type="button" onclick="location.href='turtle.html'" class="img-button">
+</div>
+</body>
+</html>
